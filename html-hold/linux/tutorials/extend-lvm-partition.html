@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/kb-style.css">
+    <title>Knowledge Base - extend-lvm-partition</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <h1 class="title">Knowledge Base</h1>
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h1 id="extend-lvm-partition">Extend LVM Partition</h1>
+<p>Logical Volume Manager (LVM) provides the means to increase and
+reduce file system size on the fly without downtime. If we have a Volume
+Group partition running out of space and want to extend or increase the
+size of the filesystem, one can do so as long as there is free space
+available in the volume group.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Root privileges</li>
+<li>Live CD on USB Drive</li>
+<li>df</li>
+<li>lvm tools</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<h3 id="view-disk-usage-of-file-system">View Disk Usage of File
+System</h3>
+<p>Run df to view total, used, and available disk space</p>
+<pre class="text-x-sh"><code>df -h </code></pre>
+<h3 id="check-free-space-in-volume-group">Check Free Space in Volume
+Group</h3>
+<p>To display Volume Group details, run vgdisplay followed by volume
+group name</p>
+<pre class="text-x-sh"><code>vgdisplay &lt;volume-group-name&gt;</code></pre>
+<h3 id="boot-into-live-cd-from-usb-drive">Boot into Live CD from USB
+Drive</h3>
+<p>The Volume Group that will be acted upon must be unmounted to make
+changes. In order to do this, boot into a Live CD to conduct the
+majority of this procedure.</p>
+<h2 id="references">References</h2>
+<ol type="1">
+<li><a
+href="https://askubuntu.com/questions/540014/how-do-i-use-move-space-from-home-lvm-to-root-lvm">Move
+Space from /home lvm to root lvm</a></li>
+<li><a href="https://www.linuxtechi.com/extend-lvm-partitions/">Extend
+lvm Partitions</a></li>
+</ol> 
+        </div>
+        <div class="footer">
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/kb-style.css">
+    <title>Knowledge Base - install-python-packages</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <h1 class="title">Knowledge Base</h1>
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h1 id="install-python-packages">Install Python
+Packages</h1>
+<p>In Debian 12, users are warned not to install packages into the
+system install of Python.  Per <a
+href="https://peps.python.org/pep-0668/">PEP 668</a>, this is to protect
+against mixing apt provided packages and pip provided packages.  Mixing
+the two package managers is always a bad idea and the source of many
+issues.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Python3 installed</li>
+<li>Pip installed</li>
+<li>Venv installed</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<h3 id="recommended-solutions">Recommended Solutions</h3>
+<ol type="1">
+<li>The recommended solution to this problem is to use a <a
+href="../../../Knowledge%20Base/Programming/Python%203/Virtual%20Environments.html">Virtual
+Environment</a> to install packages correctly.</li>
+<li>The next best solution is to install packages using apt.  The
+package can be installed as follows</li>
+</ol>
+<pre class="text-x-sh"><code>sudo apt install python3
+
+### Alternate Solution - Temporary
+If the risks are understood, and you are willing to accept the associated risks, packages can be installed using the following command
+
+```text-x-sh
+pip3 install {package} --break-system-packages</code></pre>
+<h3 id="alternate-solution---permanent">Alternate Solution -
+Permanent</h3>
+<p>If a more permanent solution to installing packages into the system
+using pip is desired , the following can be appended to
+~/.config/pip/pip.conf</p>
+<pre class="text-x-sh"><code>[global]
+break-system-packages = true</code></pre>
+<h2 id="references">References</h2>
+<ol type="1">
+<li>https://peps.python.org/pep-0668/</li>
+<li>https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3</li>
+<li>https://stackoverflow.com/questions/75602063/pip-install-r-requirements-txt-is-failing-this-environment-is-externally-mana/75696359#75696359</li>
+</ol> 
+        </div>
+        <div class="footer">
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

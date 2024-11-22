@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/kb-style.css">
+    <title>Knowledge Base - py3status</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <h1 class="title">Knowledge Base</h1>
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h1 id="purpose">Purpose</h1>
+<p>Provides  Python based configuration of the i3wm bar.</p>
+<h1 id="prerequisites">Prerequisites</h1>
+<ul>
+<li>i3wm</li>
+<li>i3bar</li>
+<li>Python3</li>
+</ul>
+<h1 id="procedure">Procedure</h1>
+<h2 id="add-py3status-to-i3bar-config">Add py3status to i3bar
+Config</h2>
+<p>Change bar portion of the i3wm config file as follows</p>
+<pre class="text-x-sh"><code>status_command py3status</code></pre>
+<p>This will use the default i3status config file for layout of the bar.
+ Since there can be multiple bar instances within the i3wm config file,
+the user can specify a specific i3status config file for each bar.  An
+alternate config file can be used as follows</p>
+<pre class="text-x-sh"><code>status_command py3status -c {path-to-config}</code></pre>
+<h1 id="references">References</h1> 
+        </div>
+        <div class="footer">
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

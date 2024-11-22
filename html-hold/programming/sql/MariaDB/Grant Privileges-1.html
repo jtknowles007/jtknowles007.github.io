@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/kb-style.css">
+    <title>Knowledge Base - Grant Privileges-1</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <h1 class="title">Knowledge Base</h1>
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <pre class="text-x-mariadb"><code>GRANT ALL PRIVILEGES ON *.* TO &#39;username&#39;@localhost IDENTIFIED BY &#39;password&#39;;</code></pre>
+<p>The *.* refers to the database or table for which the user is given
+privileges.  Using *.* grants access to all databases located on the
+server.  This could be a major security issue.  It is advised to grant
+privileges to the specific database the user will work with.</p>
+<p>To grant privileges only for yourDB, use the following statement:</p>
+<pre class="text-x-mariadb"><code>GRANT ALL PRIVILEGES ON &#39;yourDB&#39;.* TO &#39;username&#39;@localhost;</code></pre>
+<p>Be sure to refresh privileges once new ones have been awarded</p>
+<pre class="text-x-mariadb"><code>FLUSH PRIVILEGES;</code></pre> 
+        </div>
+        <div class="footer">
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

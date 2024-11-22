@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/kb-style.css">
+    <title>Knowledge Base - create-symlink</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <h1 class="title">Knowledge Base</h1>
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h1 id="create-symlink">Create Symlink</h1>
+<p>A symlink, or symbolic link, is a special type of file that points to
+another file or directory.  This is similar to a shortcut in Windows</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>ln</li>
+<li>rm</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<p>Use the following command to create a symlink.  </p>
+<pre class="text-x-sh"><code>ln -s {target file} {link name}</code></pre>
+<p>The -s option is important to create a soft link instead of a hard
+link</p>
+<p>To delete a symlink you can just remove the link using:</p>
+<pre class="text-x-sh"><code>rm {link name}</code></pre>
+<p>This will delete the link, not the original file.</p>
+<p>Things to keep in mind:</p>
+<ul>
+<li>Changes made to the symlink are reflected in the original file</li>
+<li>You can chain symbolic links</li>
+</ul>
+<h2 id="references">References</h2>
+<ol type="1">
+<li>ls man page</li>
+<li>rm man page</li>
+<li>https://linuxhandbook.com/symbolic-link-linux</li>
+</ol> 
+        </div>
+        <div class="footer">
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

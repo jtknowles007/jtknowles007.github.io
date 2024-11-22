@@ -1,0 +1,96 @@
+        @font-face {
+            font-family: 'Dosis';
+            src: local('Dosis'),
+            url("/home/john/.local/share/fonts/Dosis-VariableFont_wght.ttf") format('ttf');
+        }
+
+        body, html {
+            height: 100%; 
+            margin: 0; 
+            font-family: "Dosis",Arial, sans-serif;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        .search-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #bookmarks {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            max-width: 600px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .bookmark-group {
+            background-color: rgba(0,0,0,0.5);
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            padding: 2px 10px;
+            text-align: left;
+            flex: 1;
+        }
+
+        .bookmark {
+            display: block;
+            font-size: 120%;
+            font-weight: bold;
+            color: white;
+            margin: 5px 0;
+            text-decoration: none;
+        }
+
+        #date {
+            font-size: 50px;
+            padding: 0px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px #000000;
+        }
+
+        #time {
+            font-size: 200px;
+            padding: 0px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px #000000;
+        }
+
+        input[type=text] {
+            border-radius: 20px;
+            border: 1px solid black;
+            color: black;
+            width: 400px;
+            height: 20px;
+            padding-left: 10px;
+        }
+
+        button[type=submit] {
+            border-radius: 20px;
+            border: 1px solid black;
+            color: white;
+            background: #89CFF0;
+            width: 40px;
+            height: 40px;
+            padding-left: 10px;
+            text-shadow: 1px 1px 2px black;
+        }

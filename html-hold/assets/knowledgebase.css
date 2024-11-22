@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Dosis';
+    src: local('Dosis'),
+    url("/home/john/.local/share/fonts/Dosis-VariableFont_wght.ttf") format('ttf');
+}
+
+body, html {
+    font-family: "Dosis", Arial, sans-serif;
+    color: black;
+}
+
+body {
+    background-image: url("duplo27.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #fff;
+}
+#navbar {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
+}
+
+#endbar {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+}
+
+li.navelement {
+    float: left;
+}
+
+
+li.navelement a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.navelement a:hover {
+    color: #f3f3f3;
+    background-color: #04aa6d;
+}
+
+@media (max-width: 768px) {
+    /* Hide the menu items and create a toggle button */
+    #menuToggle {
+        display: none;
+    }
+
+    #navbar {
+        display: block;
+    }
+
+    /* Toggle button styling */
+    #menuToggleLabel {
+        display: block;
+        background-color: #04aa6d;
+        color: white;
+        padding: 14px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    /* Hide the nav items by default */
+    li.navelement {
+        display: none;
+        float: none;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #e7e7e7;
+    }
+
+    /* Display nav items when the checkbox is checked */
+    #menuToggle:checked ~ ul li.navelement {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    #menuToggle, #menuToggleLabel {
+        display:none;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    color: #04aa6d;
+}
+
+h2 { 
+    font-size: 30px;
+    color: #333;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000;
+}
+
+#backbutton {
+    background-color: #f3f3f3;
+    color:#666;
+    border: 1px solid #e7e7e7;
+    text-decoration: none;
+}
+
+code {
+    font-family: monospace;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin 20px;
+}
+
+a:link {
+    color:#666;
+    font-weight:bold;
+}
+
+a:visited {
+    color:#666;
+}
+
+a:hover {
+    color:#04aa6d;
+}
+

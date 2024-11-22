@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/kb-style.css">
+    <title>Knowledge Base - zsh-intro</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <h1 class="title">Knowledge Base</h1>
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h1 id="purpose">Purpose</h1>
+<p>Zsh (Z shell) is an extended version of the Bourne Shell (sh) with
+new features and support for plugins and themes. Since it’s based on the
+same shell as (<a
+href="../../../../Knowledge%20Base/Linux/Shell/Bash.html">Bash</a>, Zsh
+has many of the same features, and switching over is a breeze.</p>
+<p>Zsh vs Bash: Important differences: * <strong>Automatic cd:</strong>
+Just type the name of the directory * <strong>Recursive path
+expansion</strong>: For example “/u/lo/b” expands to “/usr/local/bin” *
+<strong>Automatic Syntax Highlighting</strong>: Words, file extensions,
+and other things visible in the terminal are color coded *
+<strong>Spelling Correction and Approximate Completion</strong>: If you
+make a minor mistake typing a directory name, Zsh will fix it for you *
+<strong>Plugin and Theme Support</strong>: Zsh includes many different
+plugin frameworks # Prerequisites * None # Procedure ## Install Zsh
+Install using package manager:</p>
+<pre><code>sudo apt install zsh</code></pre>
+<h2 id="make-default-shell">Make Default Shell</h2>
+<p>Run the following command to make Zsh your default shell:</p>
+<pre><code>chsh -s $(which zsh)</code></pre>
+<p>Log out and log back in again to use your new default shell. ##
+Configure Zsh User configuration settings are stored in <a
+href="../../../../Knowledge%20Base/Linux/Shell/Zsh/zshrc.html">.zshrc</a>
+## Do NOT install Oh-My-Zsh Like the heading says…don’t install it.
+Useless, bloated, and everything you may find useful about it can be
+done manually with a little bit of work. Not worth the time or effort to
+deal with it. For real, don’t do it. # References 1. <a
+href="https://www.zsh.org/">www.zsh.org</a> 2. <a
+href="https://zsh.sourceforge.io/Doc/Release/zsh_toc.html">Zsh
+Manual</a> 3. <a href="https://zsh.sourceforge.io/FAQ/">Zsh FAQ</a> 4.
+<a
+href="https://www.howtogeek.com/362409/what-is-zsh-and-why-should-you-use-it-instead-of-bash/">Zsh…Why
+Should You Use It Instead of Bash</a></p> 
+        </div>
+        <div class="footer">
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

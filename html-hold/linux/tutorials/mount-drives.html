@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/kb-style.css">
+    <title>Knowledge Base - mount-drives</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <h1 class="title">Knowledge Base</h1>
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h1 id="mount-drives">Mount Drives</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Superuser privileges</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<h3 id="list-partitions">List Partitions</h3>
+<p>Check the disk partitions already created on your system that are not
+already mounted using the following command:</p>
+<pre><code>lsblk -f</code></pre>
+<h3 id="create-mount-point">Create mount point</h3>
+<p>Mount points can be placed in one of two locations within the system,
+or anywhere desired in the user’s home directory.  It is common to mount
+permanent drives in /mnt and temporary drives or other removable media,
+such as flash drives, in /media.  There is no functional difference
+between the two locations and the user is free to mount drives anywhere
+they see fit.  The mount point can be created using the following
+command:</p>
+<pre class="text-x-sh"><code>sudo mkdir /{path-to-mountpoint}/{mountpoint}</code></pre>
+<p>NOTE: The use of sudo in the above example is not necessary if the
+mount point will be located within the user’s home directory. ### Mount
+Drive Mount the desired partition using the following command:</p>
+<pre class="text-x-sh"><code>sudo mount /dev/{partition} {path-to-mountpoint}/{mountpoint}</code></pre>
+<h2 id="references">References</h2> 
+        </div>
+        <div class="footer">
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

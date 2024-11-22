@@ -1,0 +1,153 @@
+body {
+    background-image: url("bk-brown.jpg");
+    background-size: cover;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.wrapper {
+    display: grid;
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+.nav, .footer {
+    background-color: #000;
+    color: #c09569;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding-left: 15px;
+}
+
+ol {
+    list-style-position: outside;
+    margin:0;
+    padding-left: 15px;
+}
+
+li {
+    padding-bottom: 3px;
+}
+
+/* 
+ul {
+    margin:0;
+    padding: 0;
+}
+
+ol {
+    list-style-position: outside;
+    margin:0;
+    padding-left: 15px;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+ul li a {
+    list-style-type: none;
+}
+
+*/
+
+ol li:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+#navbar {
+    margin: 0;
+    padding:0;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li a {
+    color: #905424;
+    font-weight: 900;
+    text-decoration: none;
+}
+li.navelement {
+    float: left;
+    list-style-type: none;
+}
+li.divider {
+    float: left;
+    list-style-type: none;
+}
+
+li.divider a{
+    display: block;
+    text-align: center;
+    padding:10px 0px;
+    font-weight: 900;
+    color: #905424;
+}
+
+li.navelement a, .footer a {
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-weight: 900;
+    color: #da874c;
+}
+
+li.navelement a:hover, .footer a:hover {
+    color: #ffb464;
+}
+
+
+
+.main {
+    background-image: url("13.jpg");
+    background-size: 1000px;
+    padding: 0 20px 20px 20px;
+
+}
+
+pre {
+    background: #000;
+    border-left: 3px solid #f36d33;
+    color: #fff;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+@media (max-width: 390px) {
+    .wrapper {
+            width: 360px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/kb-style.css">
+    <title>Knowledge Base - crontab</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <h1 class="title">Knowledge Base</h1>
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h2 id="purpose"><strong>Purpose</strong></h2>
+<p>Crontab is the program used to install, uninstall, or list the tables
+used to drive cron.  Each user can have their own crontab.  The user
+specific files are in /var/spool/cron/crontabs, but they are not
+intended to be edited directly.  The main system crontab is
+/etc/crontab.</p>
+<h2 id="prerequisites"><strong>Prerequisites</strong></h2>
+<ul>
+<li>Superuser credentials</li>
+</ul>
+<h2 id="syntax"><strong>Syntax</strong></h2>
+<h3 id="common-usage"><strong>Common Usage</strong></h3>
+<pre class="text-x-sh"><code>crontab -l</code></pre>
+<p>View the contents of the current user’s crontab</p>
+<pre class="text-x-sh"><code>su
+crontab -l</code></pre>
+<p>View the contents of the root crontab</p>
+<pre class="text-x-sh"><code>su
+crontab -u{username} -l</code></pre>
+<p>View the contents of specified user’s crontab</p>
+<pre class="text-x-sh"><code>crontab -e</code></pre>
+<p>Edit crontab of current user</p>
+<pre class="text-x-sh"><code>su
+crontab -e</code></pre>
+<p>Edit root crontab</p>
+<h3 id="superuser-credentials"><strong>Superuser
+Credentials</strong></h3>
+<p>Placing an entry in the root crontab will allow that entry to be
+executed with superuser credentials.  Since you cannot execute a cron
+job that requires superuser credentials from the user’s crontab, it is
+advisable to place that job in the root crontab.</p>
+<h2 id="references"><strong>References</strong></h2>
+<ol type="1">
+<li>Crontab man page</li>
+<li><a
+href="https://cronitor.io/guides/cron-jobs">https://cronitor.io/guides/cron-jobs</a>:q:</li>
+<li><a
+href="https://linuxhint.com/setup-crontab-debian-12">https://linuxhint.com/setup-crontab-debian-12</a></li>
+<li><a
+href="https://crontab-generator.com/">https://crontab-generator.com/</a></li>
+<li><a
+href="https://www.geeksforgeeks.org/crontab-in-linux-with-examples/">https://www.geeksforgeeks.org/crontab-in-linux-with-examples/</a></li>
+</ol> 
+        </div>
+        <div class="footer">
+            <ul id="navbar">
+                <li class="navelement"><a href="/kb/index.html">Home</a></li>
+                <li class="divider"><a>|</a></li>
+                <li class="navelement"><a href="javascript:history.back();">Back</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
